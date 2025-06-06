@@ -12,11 +12,17 @@ function App() {
     console.log("Clicked:", counter);
 
     //counter += 1;
-    if (counter < 20) {
-      setCounter(counter + 1);
-    } else {
-      console.log("Max limit reached (20)");
-    }
+
+    // if (counter < 20) {
+    //   setCounter(counter + 1);
+    // } else {
+    //   console.log("Max limit reached (20)");
+    // }
+
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
+    setCounter((prevCounter) => prevCounter + 1);
   };
 
   const removeValue = () => {
